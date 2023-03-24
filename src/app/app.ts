@@ -95,6 +95,14 @@ export default class App extends LitElement {
                 <igc-ripple></igc-ripple>
               </span>
             </igc-nav-drawer-item>
+            <igc-nav-drawer-item @click="${() => Router.go('/view3')}">
+              <span slot="icon">
+                <span class="material-icons icon">
+                  assessment
+                </span>
+                <igc-ripple></igc-ripple>
+              </span>
+            </igc-nav-drawer-item>
             <igc-nav-drawer-item @click="${() => Router.go('/view2')}">
               <span slot="icon">
                 <span class="material-icons icon">
@@ -103,10 +111,10 @@ export default class App extends LitElement {
                 <igc-ripple></igc-ripple>
               </span>
             </igc-nav-drawer-item>
-            <igc-nav-drawer-item @click="${() => Router.go('/view3')}">
+            <igc-nav-drawer-item @click="${() => Router.go('/view4')}">
               <span slot="icon">
                 <span class="material-icons icon">
-                  assessment
+                  alarm_on
                 </span>
                 <igc-ripple></igc-ripple>
               </span>
