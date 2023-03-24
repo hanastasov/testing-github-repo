@@ -1,8 +1,5 @@
 import { html, css, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
-
-defineComponents(IgcCalendarComponent);
 
 @customElement('app-view4')
 export default class View4 extends LitElement {
@@ -29,10 +26,6 @@ export default class View4 extends LitElement {
       flex-grow: 1;
       flex-basis: 0;
     }
-    .calendar {
-      width: max-content;
-      height: max-content;
-    }
   `;
 
   render() {
@@ -40,9 +33,7 @@ export default class View4 extends LitElement {
       <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
       <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet'>
       <link rel='stylesheet' href='../../ig-theme.css'>
-      <div class="column-layout group">
-        <igc-calendar ?hide-header="${false}" header-orientation="horizontal" class="calendar"></igc-calendar>
-      </div>
+      <div class="column-layout group"></div>
       <div class="column-layout group"></div>
     `;
   }
